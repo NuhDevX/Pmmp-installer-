@@ -1,0 +1,13 @@
+{
+  "name": "PocketMine Web Builder",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "bash .devcontainer/install.sh",
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["index.php"]
+    }
+  }
+}
